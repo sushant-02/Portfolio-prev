@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&family=Nunito+Sans:ital,wght@0,300;1,300&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Sushant Pandey</title>
 </head>
@@ -12,18 +12,30 @@
   <div class="container">
 
     <div class="navbar">
-      NAVBAR
+      <div class="navbar__logo">
+        <div class="logo"><img src="images/logo.png" alt="Logo" class="logo__img"></div>
+        <h1 class="logo__text">Sushant</h1>
+      </div>
+      <ul class="navbar__options">
+        <li class="navbar__item"><a href="#about" class="navbar__link">ABOUT</a></li>
+        <li class="navbar__item"><a href="#projects" class="navbar__link">PROJECTS</a></li>
+        <li class="navbar__item"><a href="#footer" class="navbar__link">CONTACT</a></li>
+      </ul>
     </div>
-  
+
     <header class="header">
-      HEADER
+      <div class="header__left" id="app"></div>
+      <div class="header__right"><img src="images/header-img.svg" alt="" class="header__img"></div>
     </header>
   
-    <div class="about">
-      ABOUT
+    <div class="about" id="about">
+      <h1 class="about__heading">ABOUT ME</h1>
+      <p class="about__text1">I am <strong>Sushant Pandey</strong> currently pursuing, electrical engineering at NIT Raipur. I have a keen interest in web design, web development and software development.</p>
+      <p class="about__text2">I live in Chhattisgarh, India. I have completed my higher education from Jawahar Navodaya Vidyalaya, Koriya, C.G. and currently I'm studying in NIT Raipur for my undergraduate degree. I have been doing a lot of projects and gained significant knowledge of HTML, CSS, Javascript and learning React. I love learning new things and I am open to new learnings. I would love to work for your firm and provide you my best.</p>
+      <img src="images/me.jpg" alt="Me" class="about__img">
     </div>
   
-    <div class="projects">
+    <div class="projects" id="projects">
   
       <div class="project">
         <img src="images/rps.png" alt="Rock Paper Scissors" class="project__img">
@@ -69,20 +81,22 @@
   
     </div>
   
-    <footer class="footer">
-      <ul class="nav">
-        <li class="nav__item"><a href="#" class="nav__link">LinkedIn</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Github</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Instagram</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Facebook</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Twitter</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Email</a></li>
+    <footer class="footer" id="footer">
+      <ul class="footer__nav">
+        <li class="footer__nav--item"><a href="https://www.linkedin.com/in/sushant-pandey-a69541190/" target="_blank" class="footer__nav--link">LinkedIn</a></li>
+        <li class="footer__nav--item"><a href="https://github.com/sushant-02" target="_blank" class="footer__nav--link">Github</a></li>
+        <!-- <li class="footer__nav--item"><a href="https://www.instagram.com/sushantp_02/" target="_blank" class="footer__nav--link">Instagram</a></li> -->
+        <!-- <li class="footer__nav--item"><a href="https://www.facebook.com/sushant.pandey.5245" target="_blank" class="footer__nav--link">Facebook</a></li> -->
+        <li class="footer__nav--item"><a href="https://twitter.com/Sushant36522099" target="_blank" class="footer__nav--link">Twitter</a></li>
+        <li class="footer__nav--item"><a href="mailto:skp000002@gmail.com" target="_blank" class="footer__nav--link">Email Me</a></li>
       </ul>
       <p class="copyright">
-        &copy; Copyright 2020 by Sushant Pandey.
+        Handcrafted by me &copy; twentytwenty
       </p>
     </footer>
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="index.js"></script>
   </div>
 </body>
 </html>
